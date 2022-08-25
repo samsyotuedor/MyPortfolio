@@ -10,34 +10,141 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <style>
+
+      *{
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      body {
+        font-family: 'Nunito Sans' !important;
+        box-sizing: border-box;
+        margin: 0;
+      }
+  
+      .select2-selection--single {
+        padding: 0px 10px !important;
+        height: 40px !important;
+        margin-top: 4px !important;
+        display: flex !important;
+        align-items: center !important;
+        border: 1px solid #b2c2cd !important;
+        border-radius: 4px;
+      }
+  
+      .select2-container .select2-choice {
+        padding: 5px 4px;
+        height: 40px;
+        font-size: 1.2em;
+        appearance: none;
+        border: 1px solid #b2c2cd;
+      }
+  
+      .select2-selection__arrow {
+        position: absolute;
+        top: 10px !important;
+      }
+  
+  
+      #select2-code-container {
+        padding: 0;
+      }
+  
+      #eventCategorySelectElem .select2-selection {
+        border: none !important;
+        padding: 40px 0;
+        /* border: 1px solid #b2c2cd !important; */
+        outline: none;
+        display: flex;
+        justify-content: center;
+      }
+  
+      .select2-eventcategory-0n-results li.select2-results__option:last-child {
+        color: red !important;
+      }
+  
+      #eventCategorySelectElem option:last-child {
+        color: red !important;
+      }
+  
+      #eventCategorySelectElem .select2-selection__arrow {
+        display: none;
+      }
+  
+      table.uiGrid._51mz._5h0i._88va._5f0n {
+        background: red !important;
+      }
+  
+      ._5h0i._88va {
+        border: 2px solid red !important;
+      }
+  
+      .fb_iframe_widget iframe {
+        opacity: 0;
+      }
+  
+      .fb_iframe_widget {
+        background-image: url(another-button.png);
+        background-repeat: no-repeat;
+      }
+  
+      .p-button {
+        background: #136acd !important;
+        font-weight: 600 !important;
+      }
+  
+      .p-splitbutton-menubutton {
+        /* background: red !important; */
+        border-radius: 0 22px 22px 0 !important;
+      }
+  
+      .p-splitbutton-defaultbutton {
+        border-radius: 22px 0 0 22px !important;
+      }
+  
+      #successDialog .p-dialog .p-dialog-header {
+        display: none;
+      }
+  
+      #successDialog .p-dialog .p-dialog-content {
+        padding: 0;
+        margin: 0;
+        background: #797979;
+      }
+  
+      .p-dialog .p-component {
+        border: 1px solid #EBEFF4 !important;
+        border-radius: 20px !important;
+      }
+  
+      #currencySelect .p-dropdown-items	 {
+        max-width: 300px !important
+      }
+  
+      #post-icon .p-dropdown {
+        border: none !important;
+        outline: transparent;
+      }
+  
+      .swal-button--confirm {
+        background-color: #136acd !important;
+      }
+    </style> 
+    
+    <title>React Portfolio Website </title>
+
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
