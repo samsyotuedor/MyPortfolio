@@ -111,12 +111,12 @@ export const contentPortfolio = [
     {
         id: 1,
         title: "Featured",
-        img: "mycontentimage1"
+        img: "/assets/diamondbank.png"
     },
     {
         id: 2,
         title: "Web App",
-        img: "mycontentimage2"
+        img: "/assets/diamondbank.png"
     },
     {
         id: 3,

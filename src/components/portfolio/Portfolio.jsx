@@ -30,7 +30,30 @@ export default function Portfolio() {
     ]
 
     useEffect(() =>{
-
+        switch (selected) {
+            case  "featured":
+                setData(featuredPortfolio)
+                break;
+        
+            case  "web":
+                setData(webPortfolio)
+                break;
+        
+            case  "mobile":
+                setData(mobilePortfolio)
+                break;
+        
+            case  "design":
+                setData(designPortfolio)
+                break;
+        
+            case  "content":
+                setData(contentPortfolio)
+                break;
+        
+            default:
+                setData(featuredPortfolio)
+        }
     },[selected])
 
     return (
@@ -42,38 +65,12 @@ export default function Portfolio() {
                 ))}
             </ul>
             <div className="container">
-                <div className="item ">
-                    <img src="/assets/diamondbank.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item ">
-                    <img src="/assets/diamondbank.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item ">
-                    <img src="/assets/diamondbank.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item ">
-                    <img src="/assets/diamondbank.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item ">
-                    <img src="/assets/diamondbank.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item ">
-                    <img src="/assets/diamondbank.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item ">
-                    <img src="/assets/diamondbank.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item ">
-                    <img src="/assets/diamondbank.png" alt="" />
-                    <h3>Banking App</h3>
-                </div>
+                {data.map((d) =>(
+                    <div className="item ">
+                        <img src={d.img} alt="" />
+                        <h3>{d.title}</h3>
+                    </div>
+                ))}
             </div>
         </div>
     )
