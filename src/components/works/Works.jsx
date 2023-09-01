@@ -25,6 +25,8 @@ export default function Work() {
                     </div>
                 </div>
             </div>
+            <img src="assets/small-arrow.png"  className="arrow left" alt="" />
+            <img src="assets/small-arrow.png"  className="arrow right" alt="" />
         </div>
     )
 }
